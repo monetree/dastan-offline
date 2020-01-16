@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css"  href="styles.css"  />
+    </head>
+    <body>
+        <div id="root"></div>
+<script src="react.js"></script>
+<script src="react-dom.js"></script>
+<script src="babel.min.js"></script>
+<script type="text/babel">
+class Home extends React.Component {
+    render() {
+        return (
+            <div>
+                <img src="bg.jpeg" alt="Snow" style={{  width:'100% ', height:'672px'}}></img>
+                <div className="centered" style={{ background:'#1E1721',padding:'2cm', borderRadius:'5px' }}>
+                    <img src="logo.png" style={{ width:'200px',marginBottom:'2cm' }} />
+                    <a href="inventories.html"><p style={{ color:'#fff', textAlign:'center' }}>Электронный каталог</p></a>
+                    <a href="standards.html"><p style={{ color:'#fff',textAlign:'center' }}>Нормативы</p></a>
+                </div>
+            </div>  
+        );
+    }
+}
+ReactDOM.render(
+    <Home />,
+    document.getElementById('root')
+);
+</script>
+    </body>
+</html>

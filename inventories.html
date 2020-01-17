@@ -5602,7 +5602,6 @@ class Inventories extends React.Component {
 
 
     handlDropDown = (selected_dropdown) => {
-        alert(selected_dropdown)
         let second_shows = []
         for (let i of this.state.third_dropdown){
             if(i.buildings === selected_dropdown){
@@ -5615,18 +5614,18 @@ class Inventories extends React.Component {
         })
 
 
-        let res = []
-        let lists = this.state.lists;
-        for (let list of lists){
-            if(selected_dropdown === list.buildings){
-                res.push(list)
-            }
-        }
-        this.setState({
-            show_title:false,
-            show_list:true,
-            right_side_list:res
-        })
+        // let res = []
+        // let lists = this.state.lists;
+        // for (let list of lists){
+        //     if(selected_dropdown === list.buildings){
+        //         res.push(list)
+        //     }
+        // }
+        // this.setState({
+        //     show_title:false,
+        //     show_list:true,
+        //     right_side_list:res
+        // })
     }
 
 
